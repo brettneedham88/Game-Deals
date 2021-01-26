@@ -3,7 +3,7 @@ const epicCard = document.querySelector("#epic-home-page")
 const originCard = document.querySelector("#origin-home-page")
 
 
-fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=10")
+fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=5")
   .then(response => response.json())
   .then(steamListings => {
     steamListings.forEach(
@@ -28,7 +28,7 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=10")
       })
   })
 
-fetch("https://www.cheapshark.com/api/1.0/deals?storeID=8&pageSize=10")
+fetch("https://www.cheapshark.com/api/1.0/deals?storeID=8&pageSize=5")
 .then(response => response.json())
 .then(originListings => {
   originListings.forEach(
@@ -54,7 +54,7 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=8&pageSize=10")
 })
 
 
-fetch("https://www.cheapshark.com/api/1.0/deals?storeID=25&pageSize=10")
+fetch("https://www.cheapshark.com/api/1.0/deals?storeID=25&pageSize=5")
 .then(response => response.json())
 .then(epicListings => {
   epicListings.forEach(
