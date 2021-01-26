@@ -1,6 +1,5 @@
 class StoresController < ApplicationController
 
-
   def index
     @stores = Store.all 
     render json: @stores 
@@ -39,6 +38,5 @@ class StoresController < ApplicationController
 
     render json: "Store: #{@store.name} has been destroyed."
   end
-
 
 end
