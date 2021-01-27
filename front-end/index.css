@@ -77,7 +77,8 @@ main {
 #store-images {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: -50px;
 
 }
 
