@@ -1,3 +1,85 @@
+header {
+  background-color: rgb(201, 200, 200);
+  border-style: solid;
+  color: rgb(201, 200, 200);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'roboto mono', monospace;
+}
+
+main {
+  font-family: 'roboto', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+#home-page-title {
+  text-align: left;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 100%;
+  width: 100%;
+  margin-top: -10px;
+  color: rgb(255, 251, 251);
+  position: relative;
+  top: 20px;
+  margin-left: 18px;
+}
+
+
+
+
+
+#nav-bar {
+  position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 35px;
+  background-color: rgb(201, 200, 200);
+  overflow: hidden;
+  
+}
+
+#nav-bar a:hover {
+  background-color:rgb(201, 200, 200);
+  color: rgb(255, 251, 251);
+}
+
+#nav-bar a {
+  text-decoration: none;
+  border-style: solid;
+  background-color: white;
+  color: rgb(133, 132, 132);
+  width: 480px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  bottom: 5px;
+}
+
+
+
+
+
+#store-banners {
+  display: flex;
+}
+
+.store-logo {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#steam-store-logo {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+
+
+
 #home-page-store-details {
   display: flex;
   justify-content: space-around;
@@ -6,39 +88,54 @@
 }
 
 .store-cards {
-  background-color: rgb(142, 140, 140);
+  background-color: rgb(255, 255, 255);
   width: 300px;
   text-align: center;
 }
 
-
-#home-page-title {
-  text-align: center;
-}
-
-#nav-bar {
-  position: center;
-  text-align: center;
-  display: flex;
+#epic-home-page {
+  display:flex;
   justify-content: space-around;
-  width: 100%;
-  height: 40px;
-  background-color: rgb(7, 6, 6);
-  position: sticky;
-  overflow: hidden;
-  align-items: center;
-}
-
-#nav-bar a:hover {
-  background-color: aliceblue;
-  color: black;
-}
-
-#nav-bar a {
+  flex-direction: column;
+  align-self: auto;
   text-decoration: none;
-  color: white;
+  align-items: center;
+  border-radius: 10px;
+  
 }
 
-body {
-  font-family: roboto, sans-serif;
+
+
+
+
+#game-div-card {
+  border-style: solid;
+  border-color: rgb(133, 132, 132);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 290px;
+  bottom: 5px;
+  background-color: rgb(201, 200, 200);
+  border-radius: 5px;
 }
+
+#game-title {
+  text-decoration: none;
+  font-size: larger;
+}
+
+#game-image {
+  width:160px;
+  height:60px;
+  margin-bottom: 20px;
+}
+
+#game-savings {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
