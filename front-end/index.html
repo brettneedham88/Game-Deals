@@ -6,21 +6,28 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Game Deals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <title>/gaming_deals</title>
 </head>
 <body>
     <header>
-        <h1 id="home-page-title">Homepage</h1>
+        <h1 id="home-page-title">/gaming_deals</h1>
         <nav id="nav-bar">
-            <a href="http://localhost:3000/">Home</a>
-            <a href="">Steam Deals</a>
-            <a href="">Epic Games Deals</a>
-            <a href="">Origin Deals</a>
-            <a href="">Random Daily Deal</a>
+            <a class="nav-items" href="http://localhost:3000/">Home</a>
+            <a class="nav-items" href="">Steam Deals</a>
+            <a class="nav-items" href="">GOG Deals</a>
+            <a class="nav-items" href="">Epic Games Deals</a>
+            <a class="nav-items" href="">Buy>Play A Random Game</a>
         </nav>
     </header>
     <main>
+        <div id="store-images">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" alt="steam logo" id="steam-store-logo" class="store-logo">
+            <img src="https://download.logo.wine/logo/GOG.com/GOG.com-Logo.wine.png" alt="gog logo" class="store-logo">
+            <img src="https://cdn2.unrealengine.com/Epic+Games+Node%2FepicLogo_1920x1080-1920x1080-401b77ef30fa9e5aaadbdd99ad2ff27ceda27a6f.png" alt="epic logo" class="store-logo">
+        </div>
         <div id="home-page-store-details">
             <div class="store-cards" id="steam-home-page"></div>
             <div class="store-cards" id="origin-home-page"></div>
