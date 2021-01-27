@@ -13,11 +13,11 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=50")
     const savings = `${epicListing.savings}`
     const truncatedSavings = Math.trunc(savings)
 
-    parentDiv.setAttribute("id", "parent-game-card")
+    parentDiv.setAttribute("class", "parent-game-card")
     gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${epicListing.steamAppID}'>${epicListing.title}</a>`
-    gameTitle.setAttribute("id", "game-title")
+    gameTitle.setAttribute("class", "game-title")
     gameThumb.setAttribute("src", `${epicListing.thumb}`)
-    gameThumb.setAttribute("id", "game-image")
+    gameThumb.setAttribute("class", "game-image")
     gamePrices.textContent = `Currently: $ ${epicListing.salePrice}/ Normal: $ ${epicListing.normalPrice}`
     gameSavings.textContent = `Savings: ${truncatedSavings}%`
     gameSavings.setAttribute("id", "game-savings")

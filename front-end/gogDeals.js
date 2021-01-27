@@ -13,11 +13,11 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=50")
     const savings = `${gogListing.savings}`
     const truncatedSavings = Math.trunc(savings)
 
-    parentDiv.setAttribute("id", "parent-game-card")
+    parentDiv.setAttribute("class", "parent-game-card")
     gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${gogListing.steamAppID}'>${gogListing.title}</a>`
-    gameTitle.setAttribute("id", "game-title")
+    gameTitle.setAttribute("class", "game-title")
     gameThumb.setAttribute("src", `${gogListing.thumb}`)
-    gameThumb.setAttribute("id", "game-image")
+    gameThumb.setAttribute("class", "game-image")
     gamePrices.textContent = `Currently: $ ${gogListing.salePrice}/ Normal: $ ${gogListing.normalPrice}`
     gameSavings.textContent = `Savings: ${truncatedSavings}%`
     gameSavings.setAttribute("id", "game-savings")
