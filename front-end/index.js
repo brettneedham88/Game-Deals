@@ -12,23 +12,27 @@ const originCard = document.querySelector("#origin-home-page")
         const gameThumb = document.createElement('img')
         const gamePrices = document.createElement("div")
         const gameSavings = document.createElement("div")
+        const buyNow = document.createElement('div')
         const savings = `${steamListing.savings}`
         const truncatedSavings = Math.trunc(savings)
   
         parentDiv.setAttribute("id", "game-div-card")
-        gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${steamListing.steamAppID}'>${steamListing.title}</a>`
+        gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${steamListing.steamAppID}' target="_blank">${steamListing.title}</a>`
         gameTitle.setAttribute("id", "game-title")
         gameThumb.setAttribute("src", `${steamListing.thumb}`)
         gameThumb.setAttribute("id", "game-image")
         gamePrices.textContent = `Currently: $ ${steamListing.salePrice}/ Normal: $ ${steamListing.normalPrice}`
         gameSavings.textContent = `Savings: ${truncatedSavings}%`
         gameSavings.setAttribute("id", "game-savings")
+        buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${steamListing.dealID}" target="_blank">Buy Now</a>`
+        buyNow.setAttribute("class","buy-now-button")
         
         
         parentDiv.append(gameTitle)
         parentDiv.append(gameThumb)
         parentDiv.append(gamePrices)
         parentDiv.append(gameSavings)
+        parentDiv.append(buyNow)
         steamCard.append(parentDiv)
       })
   })
@@ -43,23 +47,27 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=5")
       const gameThumb = document.createElement('img')
       const gamePrices = document.createElement("div")
       const gameSavings = document.createElement("div")
+      const buyNow = document.createElement('div')
       const savings = `${gogListing.savings}`
       const truncatedSavings = Math.trunc(savings)
 
       parentDiv.setAttribute("id", "game-div-card")
-      gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${gogListing.steamAppID}'>${gogListing.title}</a>`
+      gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${gogListing.steamAppID}' target="_blank">${gogListing.title}</a>`
       gameTitle.setAttribute("id", "game-title")
       gameThumb.setAttribute("src", `${gogListing.thumb}`)
       gameThumb.setAttribute("id", "game-image")
       gamePrices.textContent = `Currently: $ ${gogListing.salePrice}/ Normal: $ ${gogListing.normalPrice}`
       gameSavings.textContent = `Savings: ${truncatedSavings}%`
       gameSavings.setAttribute("id", "game-savings")
+      buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${gogListing.dealID}" target="_blank">Buy Now</a>`
+      buyNow.setAttribute("class","buy-now-button")
       
       
       parentDiv.append(gameTitle)
       parentDiv.append(gameThumb)
       parentDiv.append(gamePrices)
       parentDiv.append(gameSavings)
+      parentDiv.append(buyNow)
       originCard.append(parentDiv)
     })
 })
@@ -75,23 +83,28 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=25&pageSize=5")
       const gameThumb = document.createElement('img')
       const gamePrices = document.createElement("div")
       const gameSavings = document.createElement("div")
+      const buyNow = document.createElement('div')
       const savings = `${epicListing.savings}`
       const truncatedSavings = Math.trunc(savings)
 
       parentDiv.setAttribute("id", "game-div-card")
-      gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${epicListing.steamAppID}'>${epicListing.title}</a>`
+      gameTitle.innerHTML = `<a href='https://store.steampowered.com/app/${epicListing.steamAppID}' target="_blank">${epicListing.title}</a>`
       gameTitle.setAttribute("id", "game-title")
       gameThumb.setAttribute("src", `${epicListing.thumb}`)
       gameThumb.setAttribute("id", "game-image")
       gamePrices.textContent = `Currently: $ ${epicListing.salePrice}/ Normal: $ ${epicListing.normalPrice}`
       gameSavings.textContent = `Savings: ${truncatedSavings}%`
       gameSavings.setAttribute("id", "game-savings")
+      buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${epicListing.dealID}" target="_blank">Buy Now</a>`
+      buyNow.setAttribute("class","buy-now-button")
+      
       
       
       parentDiv.append(gameTitle)
       parentDiv.append(gameThumb)
       parentDiv.append(gamePrices)
       parentDiv.append(gameSavings)
+      parentDiv.append(buyNow)
       epicCard.append(parentDiv)
     })
 })
