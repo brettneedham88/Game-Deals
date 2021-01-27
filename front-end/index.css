@@ -81,11 +81,23 @@ main {
   margin-bottom: -50px;
 }
 
-.store-logo {
-  max-width: 200px;
-  max-height: 200px;
+
+
+#steam-logo {
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
 }
 
+#gog-logo {
+  width: 200px;
+  height: 200px;
+}
+
+#epicgames-logo {
+  width: 200px;
+  height: 200px;
+}
 
 
 
@@ -113,10 +125,6 @@ main {
   border-radius: 10px;
   
 }
-
-
-
-
 
 #game-div-card {
   border-style: solid;
