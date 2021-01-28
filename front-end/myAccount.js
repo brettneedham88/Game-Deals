@@ -5,9 +5,8 @@ fetch("http://localhost:3000/stores")
   .then(stores => {
     stores.forEach(store => {
       const storeOption = document.createElement('option')
-
-      console.log(store.store_id)
-      storeOption.value = store.store_id
+      
+      storeOption.value = store.id
       storeOption.textContent = store.name 
 
       storesDropDown.append(storeOption)
