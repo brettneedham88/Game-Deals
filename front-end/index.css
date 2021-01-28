@@ -10,7 +10,7 @@ header {
   padding: 10px;
   border-radius: 5px;
   border-color:rgb(75, 74, 74);
-  border-width:medium
+  border-width: medium;
   -moz-box-shadow:    inset 0 0 10px rgb(77, 124, 173);
   -webkit-box-shadow: inset 0 0 15px rgb(77, 124, 173);
   box-shadow:         inset 0 0 30px rgb(77, 124, 173);
@@ -32,10 +32,6 @@ main {
   top: 20px;
   margin-left: 18px;
 }
-
-
-
-
 
 #nav-bar {
   position: center;
@@ -70,7 +66,9 @@ main {
 }
 
 
-
+#home-button {
+  background-color: rgb(77, 124, 173);
+}
 
 
 #store-images {
@@ -117,7 +115,7 @@ main {
   text-align: center;
 }
 
-#epic-home-page {
+/* #epic-home-page {
   display:flex;
   justify-content: space-around;
   flex-direction: column;
@@ -126,26 +124,34 @@ main {
   align-items: center;
   border-radius: 10px;
   
-}
+} */
 
 #game-div-card {
+  align-items: center;
   border-style: solid;
   border-color: rgb(75, 74, 74);
-  margin-bottom: 2px;
-  margin-top: 2px;
+  border-width: thick;
+  margin-bottom: 15px;
+  margin-top: 15px;
   width: 290px;
   bottom: 5px;
   background-color: rgb(226, 224, 224);
   border-radius: 5px;
-  -moz-box-shadow:    inset 0 0 10px rgb(77, 124, 173);
-  -webkit-box-shadow: inset 0 0 15px rgb(77, 124, 173);
-  box-shadow:         inset 0 0 20px rgb(77, 124, 173);
+  -moz-box-shadow:    inset 0 0 10px rgb(0, 0, 0);
+  -webkit-box-shadow: inset 0 0 15px rgb(0, 0, 0);
+  box-shadow:         inset 0 0 20px rgb(0, 0, 0);
+}
+
+h3 {
+  height: 50px;
 }
 
 #game-title a {
   text-decoration: none;
   font-size: larger;
+
 }
+
 
 #game-image {
   width:160px;
@@ -159,25 +165,44 @@ main {
 }
 
 .buy-now-button {
+  width: 98%;
+  position: relative; right:2.2px;
   text-decoration: none;
+  border-style: solid;
   background-color: #EEEEEE;
-  color: #333333;
+  border-color: #333333;
   padding: 2px 2px 2px 2px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
+  border-top: 3px solid rgb(75, 74, 74);
+  border-radius: 5px;
+  border-right: 3px solid rgb(75, 74, 74);
   border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  border-left: 3px solid rgb(75, 74, 74);
 }
 
 .buy-now-button a {
   text-decoration: none;
 }
 
+.buy-now-button a:hover {
+  background-color:#EEEEEE;
+}
 
 
-
-
-
+a:link {
+  color: rgb(75, 74, 74);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(77, 124, 173);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none
+}
 
 
 #logo {
