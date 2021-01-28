@@ -24,11 +24,28 @@
 }
 
 .game-image {
-  width: 75%;
-  height: auto;
+  width: auto;
+  max-width: 90%;
+  height: 80px;
 }
 
 
-.game-title {
+.game-title a {
   text-align: center;
+  text-decoration: none;
+}
+
+.buy-now-button {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 2px 2px 2px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.buy-now-button a {
+  text-decoration: none;
 }

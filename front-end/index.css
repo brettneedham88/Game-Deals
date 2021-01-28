@@ -77,25 +77,28 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 }
 
 
 
 #steam-logo {
-  width: 200px;
-  height: 100px;
+  width: 220px;
+  height: 70px;
   margin-top: 50px;
+  align-items: center;
 }
 
 #gog-logo {
   width: 200px;
   height: 200px;
+  align-items: center;
 }
 
 #epicgames-logo {
   width: 200px;
   height: 200px;
+  align-items: center;
 }
 
 
@@ -139,7 +142,7 @@ main {
   box-shadow:         inset 0 0 20px rgb(77, 124, 173);
 }
 
-#game-title {
+#game-title a {
   text-decoration: none;
   font-size: larger;
 }
@@ -164,6 +167,10 @@ main {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+}
+
+.buy-now-button a {
+  text-decoration: none;
 }
 
 

@@ -10,6 +10,7 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=50")
     const gameThumb = document.createElement('img')
     const gamePrices = document.createElement("div")
     const gameSavings = document.createElement("div")
+    const buyNow = document.createElement('div')
     const savings = `${gogListing.savings}`
     const truncatedSavings = Math.trunc(savings)
 
@@ -21,12 +22,14 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=50")
     gamePrices.textContent = `Currently: $ ${gogListing.salePrice}/ Normal: $ ${gogListing.normalPrice}`
     gameSavings.textContent = `Savings: ${truncatedSavings}%`
     gameSavings.setAttribute("id", "game-savings")
+    buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${gogListing.dealID}" target="_blank">Buy Now</a>`
+      buyNow.setAttribute("class","buy-now-button")
     
     parentDiv.append(gameTitle)
     parentDiv.append(gameThumb)
     parentDiv.append(gamePrices)
     parentDiv.append(gameSavings)
-
+    parentDiv.append(buyNow)
     gogCard.append(parentDiv)
   })
 })
