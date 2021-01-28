@@ -17,7 +17,7 @@ class StoresController < ApplicationController
       store_id: params[:store_id],
       name: params[:name]
     )
-  render json: @store
+    render json: @store
   end
 
 

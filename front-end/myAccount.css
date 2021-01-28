@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(77, 124, 173);
+  font-family: 'Exo 2', sans-serif;
+}
+
+header {
+  background-color: rgb(201, 200, 200);
+  border-style: solid;
+  color: rgb(201, 200, 200);
+  padding: 10px;
+  border-radius: 5px;
+  border-color:rgb(75, 74, 74);
+  border-width: medium;
+  -moz-box-shadow:    inset 0 0 10px rgb(77, 124, 173);
+  -webkit-box-shadow: inset 0 0 15px rgb(77, 124, 173);
+  box-shadow:         inset 0 0 30px rgb(77, 124, 173);
+}
+
+main {
+  background-color: rgb(77, 124, 173);
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#nav-bar {
+  position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#nav-bar a:hover {
+  background-color:rgb(255, 255, 255);
+  color: rgb(77, 124, 173);
+}
+
+#nav-bar a {
+  text-decoration: none;
+  border-style: solid;
+  background-color: white;
+  color: rgb(75, 74, 74);
+  width: 480px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  bottom: 5px;
+  -moz-box-shadow:    inset 0 0 10px rgb(77, 124, 173);
+  -webkit-box-shadow: inset 0 0 10px rgb(77, 124, 173);
+  box-shadow:         inset 0 0 5px rgb(77, 124, 173);
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.my-account-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 200px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.my-account-titles {
+  text-align: center;
+}
+
+#form-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.submit-button {
+  margin-top: 10px;
+}

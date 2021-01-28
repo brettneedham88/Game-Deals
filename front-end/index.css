@@ -10,7 +10,7 @@ header {
   padding: 10px;
   border-radius: 5px;
   border-color:rgb(75, 74, 74);
-  border-width:medium
+  border-width: medium;
   -moz-box-shadow:    inset 0 0 10px rgb(77, 124, 173);
   -webkit-box-shadow: inset 0 0 15px rgb(77, 124, 173);
   box-shadow:         inset 0 0 30px rgb(77, 124, 173);
@@ -33,7 +33,13 @@ main {
   margin-left: 18px;
 }
 
-
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 
@@ -180,13 +186,7 @@ main {
 
 
 
-#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 
 
 

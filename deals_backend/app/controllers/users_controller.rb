@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all 
-    render json: @users 
+    render json: @users, include: :store
   end
 
 
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     @user = User.create(
       username: params[:username],
       password: params[:password],
-      store: params[:store]
+      store: params[:store_id]
     )
     render json: @user
   end
