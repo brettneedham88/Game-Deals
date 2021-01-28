@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="myAccount.js" defer></script>
+  <link rel="stylesheet" href="myAccount.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>My Account</title>
+</head>
+<body>
+  <header>
+    <h1 id="home-page-title"> <img id="logo" src="gameDealsLogo.png" alt=""></h1>
+    <nav id="nav-bar">
+      <a class="nav-items" href="index.html">Home</a>
+      <a class="nav-items" href="steamDeals.html">Steam Deals</a>
+      <a class="nav-items" href="gogDeals.html">GOG Deals</a>
+      <a class="nav-items" href="epicDeals.html">Epic Games Deals</a>
+      <a class="nav-items" href="myAccount.html">My Account</a>
+  </nav>
+  </header>
+  <main>
+    <div id="form-parent">
+      <span class="form" id="create-form-parent">
+        <h2 class="my-account-titles">Create New Account</h2>
+        <label for="create-user-form"></label>
+        <form id="create-user-form" class="my-account-form" action="http://localhost:3000/users" method="POST">
+          <label for="username-field">Username</label>
+          <input id="username-field" type="text" placeholder="Enter Username" name="username">
+          <label for="password-field">Password</label>
+          <input id="password-field" type="password" placeholder="Enter Password" name="password">
+          <label for="store-dropdown">Favorite Store</label>
+          <select name="store" id="store-dropdown"></select>
+          <button class="submit-button" type="submit">Create New Account</button>
+        </form>
+      </span>
+      <span class="form" id="login-form-parent">
+        <h2 class="my-account-titles">Login</h2>
+        <label for="create-user-form"></label>
+        <form id="login-user-form" class="my-account-form" action="http://localhost:3000/users" method="POST">
+        <label for="username-field">Username</label>
+        <input id="username-field" type="text" placeholder="Enter Username" name="username">
+        <label for="password-field">Password</label>
+        <input id="password-field" type="password" placeholder="Enter Password" name="password">
+        <button class="submit-button" type="submit">Login</button>
+        </form>
+        </form>
+      </span>
+    </div>
+  </main>
+</body>
+</html>
