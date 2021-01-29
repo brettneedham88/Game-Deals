@@ -145,7 +145,8 @@ a:visited {
 a:hover {
   color:rgb(0, 0, 0);
   background-color: transparent;
-  text-decoration: none
+  text-decoration: none;
+  font-weight: bold;
 }
 
 h3 {
@@ -161,9 +162,8 @@ h3 {
 
 #game-normal-price {
   margin-top: -8px;
-  text-decoration:line-through;
+  text-decoration: line-through;
   margin-bottom: 7px;
-  
 }
 
 
