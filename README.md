@@ -26,8 +26,8 @@ git clone git@github.com:brettneedham88/mod2_project.git
 Then CD into the repository and run the following:
 ```
 bundle install
-rake db:migrate
-rake db:seed
+rails db:migrate
+rails db:seed
 ```
 Then have two terminals open, CD into "front-end" and CD into "backend" and then run the website with: 
 ```
