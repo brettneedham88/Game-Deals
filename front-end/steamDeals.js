@@ -9,7 +9,8 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=50")
     const parentDiv = document.createElement('div')
     const gameTitle = document.createElement("H3")
     const gameThumb = document.createElement('img')
-    const gamePrices = document.createElement("div")
+    const gameSalePrice = document.createElement("div")
+    const gameNormalPrice = document.createElement("div")
     const gameSavings = document.createElement("div")
     const buyNow = document.createElement('div')
     const savings = `${steamListing.savings}`
@@ -20,7 +21,10 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=50")
     gameTitle.setAttribute("class", "game-title")
     gameThumb.setAttribute("src", `${steamListing.thumb}`)
     gameThumb.setAttribute("class", "game-image")
-    gamePrices.textContent = `Currently: $ ${steamListing.salePrice}/ Normal: $ ${steamListing.normalPrice}`
+    gameSalePrice.textContent = `Currently: $ ${steamListing.salePrice}`
+    gameSalePrice.setAttribute("id", "game-sale-price")
+    gameNormalPrice.textContent = `Normally: $ ${steamListing.normalPrice}`
+    gameNormalPrice.setAttribute("id", "game-normal-price")
     gameSavings.textContent = `Savings: ${truncatedSavings}%`
     gameSavings.setAttribute("id", "game-savings")
     buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${steamListing.dealID}" target="_blank">Buy Now</a>`
@@ -28,7 +32,8 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=50")
     
     parentDiv.append(gameTitle)
     parentDiv.append(gameThumb)
-    parentDiv.append(gamePrices)
+    parentDiv.append(gameSalePrice)
+    parentDiv.append(gameNormalPrice)
     parentDiv.append(gameSavings)
     parentDiv.append(buyNow)
     steamCard.append(parentDiv)
