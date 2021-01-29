@@ -209,7 +209,8 @@ a:visited {
 a:hover {
   color:rgb(0, 0, 0);
   background-color: transparent;
-  text-decoration: none
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
