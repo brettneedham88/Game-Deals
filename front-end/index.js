@@ -23,7 +23,9 @@ const originCard = document.querySelector("#origin-home-page")
         gameThumb.setAttribute("src", `${steamListing.thumb}`)
         gameThumb.setAttribute("id", "game-image")
         gameSalePrice.textContent = `Currently: $ ${steamListing.salePrice}`
+        gameSalePrice.setAttribute("id", "game-sale-price")
         gameNormalPrice.textContent = `Normally: $ ${steamListing.normalPrice}`
+        gameNormalPrice.setAttribute("id", "game-normal-price")
         gameSavings.textContent = `Savings: ${truncatedSavings}%`
         gameSavings.setAttribute("id", "game-savings")
         buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${steamListing.dealID}" target="_blank">Buy Now</a>`
@@ -61,7 +63,9 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=7&pageSize=5")
       gameThumb.setAttribute("src", `${gogListing.thumb}`)
       gameThumb.setAttribute("id", "game-image")
       gameSalePrice.textContent = `Currently: $ ${gogListing.salePrice}`
+      gameSalePrice.setAttribute("id", "game-sale-price")
       gameNormalPrice.textContent = `Normally: $ ${gogListing.normalPrice}`
+      gameNormalPrice.setAttribute("id", "game-normal-price")
       gameSavings.textContent = `Savings: ${truncatedSavings}%`
       gameSavings.setAttribute("id", "game-savings")
       buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${gogListing.dealID}" target="_blank">Buy Now</a>`
@@ -100,7 +104,9 @@ fetch("https://www.cheapshark.com/api/1.0/deals?storeID=25&pageSize=5")
       gameThumb.setAttribute("src", `${epicListing.thumb}`)
       gameThumb.setAttribute("id", "game-image")
       gameSalePrice.textContent = `Currently: $ ${epicListing.salePrice}`
+      gameSalePrice.setAttribute("id", "game-sale-price")
       gameNormalPrice.textContent = `Normally: $ ${epicListing.normalPrice}`
+      gameNormalPrice.setAttribute("id", "game-normal-price")
       gameSavings.textContent = `Savings: ${truncatedSavings}%`
       gameSavings.setAttribute("id", "game-savings")
       buyNow.innerHTML = `<a href= "https://www.cheapshark.com/redirect?dealID=${epicListing.dealID}" target="_blank">Buy Now</a>`

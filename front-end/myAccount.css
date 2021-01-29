@@ -66,6 +66,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  
 
 }
 
@@ -73,10 +74,12 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: -10px;
+  margin-top: 10px;
   margin-bottom: 200px;
   margin-left: 500px;
   margin-right: 500px;
+  min-width: 400px;
+  
 }
 
 .my-account-titles {

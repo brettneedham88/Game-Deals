@@ -123,16 +123,7 @@ main {
   text-align: center;
 }
 
-/* #epic-home-page {
-  display:flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-self: auto;
-  text-decoration: none;
-  align-items: center;
-  border-radius: 10px;
-  
-} */
+
 
 #game-div-card {
   align-items: center;
@@ -161,23 +152,42 @@ h3 {
 }
 
 
+
+
 #game-image {
-  width:160px;
-  height:60px;
+  width: auto;
+  max-width: 90%;
+  height: 80px;
   margin-bottom: 20px;
 }
+
+
+#game-sale-price {
+  margin-top: 10px;
+  color:rgb(77, 124, 173);
+  font-size: large;
+}
+
+
+#game-normal-price {
+  margin-top: px;
+  text-decoration:line-through;
+  
+}
+
 
 #game-savings {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
+
 .buy-now-button {
   width: 98%;
   position: relative; right:2.2px;
   text-decoration: none;
   border-style: solid;
-  background-color: #EEEEEE;
+  background-color: rgb(255, 253, 253);
   border-color: #333333;
   padding: 2px 2px 2px 2px;
   border-top: 3px solid rgb(75, 74, 74);
@@ -187,9 +197,11 @@ h3 {
   border-left: 3px solid rgb(75, 74, 74);
 }
 
+
 .buy-now-button a {
   text-decoration: none;
 }
+
 
 .buy-now-button a:hover {
   background-color:#EEEEEE;
@@ -201,11 +213,13 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
+
 a:visited {
   color: rgb(77, 124, 173);
   background-color: transparent;
   text-decoration: none;
 }
+
 a:hover {
   color:rgb(0, 0, 0);
   background-color: transparent;
