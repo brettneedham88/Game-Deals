@@ -17,8 +17,8 @@ class UsersController < ApplicationController
       password: params[:password],
       store_id: params[:store]
     )
-    render json: @user
-    # redirect_to "http://localhost:3001"
+    # render json: @user
+    redirect_to "http://localhost:3001"
   end
 
 
