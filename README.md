@@ -7,7 +7,7 @@
 Game Deals is a website that allows you to find the best daily video game deals on the market.
 
 ## Intro Video
-[Game Deals on YouTube]()
+[Game Deals on YouTube](https://youtu.be/yPMFYbB_m38)
 
 ## Technologies
 * Ruby - version 2.6.5
